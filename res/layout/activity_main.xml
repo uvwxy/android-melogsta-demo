@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnLogD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="logD"
+        android:text="LogD" />
+
+    <Button
+        android:id="@+id/btnLogE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogD"
+        android:layout_below="@+id/btnLogD"
+        android:onClick="logE"
+        android:text="LogE" />
+
+    <Button
+        android:id="@+id/btnLogI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogE"
+        android:layout_below="@+id/btnLogE"
+        android:onClick="logI"
+        android:text="LogI" />
+
+    <Button
+        android:id="@+id/btnLogV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogI"
+        android:layout_below="@+id/btnLogI"
+        android:onClick="logV"
+        android:text="LogV" />
+
+    <Button
+        android:id="@+id/btnLogWTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogW"
+        android:layout_below="@+id/btnLogW"
+        android:onClick="logWTF"
+        android:text="LogWTF" />
+
+    <Button
+        android:id="@+id/btnLogW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogV"
+        android:layout_below="@+id/btnLogV"
+        android:onClick="logW"
+        android:text="LogW" />
+
+    <CheckBox
+        android:id="@+id/cbCombined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnLogD"
+        android:layout_marginRight="14dp"
+        android:onClick="toggleCombined"
+        android:text="Combined Logs" />
+
+    <CheckBox
+        android:id="@+id/cbLogCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbCombined"
+        android:layout_below="@+id/cbCombined"
+        android:onClick="toggleLogCat"
+        android:text="LogCat" />
+
+    <CheckBox
+        android:id="@+id/cbDisAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogI"
+        android:layout_alignLeft="@+id/cbLogCat"
+        android:onClick="toggleLogDisAll"
+        android:text="Disable all" />
+
+</RelativeLayout>
